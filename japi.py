@@ -34,6 +34,7 @@ def main():
          s = input("Please enter your stock symbol or enter quit to end..")
          if s != 'quit':
             ps = getStockData(s)
+            print('Stock Quotes retrieved successfully!')
             save_stockprice(r'C:\Users\16195\Desktop\now', 'japi.out', ps)
          else: break
         
